@@ -17,3 +17,4 @@ client/yarn-debug.log*
 client/yarn-error.log*
 dumps.txt
 /config/default.json
+/config/production.json
