@@ -1,0 +1,61 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bulma": "^0.8.1",
+    "date-fns": "^2.11.1",
+    "deck.gl": "^8.1.1",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.15",
+    "mapbox-gl": "^1.9.1",
+    "pusher-js": "^5.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.9.0",
+    "react-map-gl": "^5.2.3",
+    "react-redux": "^7.2.0",
+    "react-resize-detector": "^4.2.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "tailwindcss": "^1.2.0",
+    "uuid": "^7.0.3"
+  },
+  "scripts": {
+    "start": "npm-run-all -p start:css start:js",
+    "build": "npm-run-all build:css build:js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:js": "react-scripts start",
+    "build:js": "react-scripts build",
+    "start:css": "postcss src/style/tailwind.css -o src/style/style.css -w",
+    "build:css": "postcss src/style/tailwind.css -o src/style/style.css --env production"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  }
+}

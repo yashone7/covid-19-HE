@@ -1,0 +1,29 @@
+{
+  "name": "covid-19-app",
+  "version": "1.0.0",
+  "description": "A node.js based geo visualization app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "yashone7",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.12.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.7",
+    "pusher": "^3.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
